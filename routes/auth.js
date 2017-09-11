@@ -12,7 +12,7 @@ passport.use(new Strategy(
         passwordField: 'Password'//页面上的密码字段的name属性值
     },
     function (username, password, cb) {
-        var account = require('../config/account');
+        var account = require('/home/admin/data/ginnier/account');
         //自己判断用户是否有效
         if (username === account.UserName && password === account.Password) {
             //验证通过
@@ -28,7 +28,7 @@ passport.serializeUser(function (user, cb) {
 });
 
 passport.deserializeUser(function (id, cb) {
-    var account = require('../config/account');
+    var account = require('/home/admin/data/ginnier/account');
     if (account.Id === id) {
         return cb(null, account);
     } else {
