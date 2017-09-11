@@ -1,5 +1,6 @@
 {
   "DbPath": "mongodb://iZj6cf68kbu9tecj7eckcyZ/",
+  "DbPathDev": "mongodb://guanjingjingdeMacBook-Pro.local/",
   "Redis": {
     "Active": false,
     "Host": "127.0.0.1",
