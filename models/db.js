@@ -1,5 +1,5 @@
 var dbPath = require('../config').DbPath;
-// var dbPath =  process.env.MONGOLAB_URI;
+// var dbPath =  require('../config').DbPathDev;
 var mongoose = require('mongoose');
 var extend = require('mongoose-schema-extend');
 var i18n = require('./i18n');
